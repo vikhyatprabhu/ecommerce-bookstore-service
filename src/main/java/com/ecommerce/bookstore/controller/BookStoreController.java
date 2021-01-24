@@ -19,14 +19,14 @@ public class BookStoreController {
     @Autowired
     private BookStoreService bookStoreService;
 
-    @CrossOrigin(origins = {"http://localhost:3000" , "https://whispering-anchorage-58095.herokuapp.com/"})
+    @CrossOrigin(origins = {"http://localhost:3000" , "https://whispering-anchorage-58095.herokuapp.com"})
     @GetMapping
     public Page<Book> getBooks(Pageable pageable){
       return bookStoreService.list(pageable);
     }
 
 
-    @CrossOrigin(origins = {"http://localhost:3000", "https://whispering-anchorage-58095.herokuapp.com/"})
+    @CrossOrigin(origins = {"http://localhost:3000", "https://whispering-anchorage-58095.herokuapp.com"})
     @GetMapping("/search")
     public Page<Book> getBooks( @RequestParam(name = "title") String title, Pageable pageable){
       return bookStoreService.searchByTitle(title,pageable);
