@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch BookstoreApplication",
+            "request": "launch",
+            "mainClass": "com.ecommerce.bookstore.BookstoreApplication",
+            "projectName": "bookstore"
+        },
+        {
+            "type": "java",
+            "name": "Launch BookstoreApplication",
+            "request": "launch",
+            "mainClass": "com.ecommerce.bookstore.bookstore.BookstoreApplication",
+            "projectName": "bookstore"
+        }
+    ]
+}
